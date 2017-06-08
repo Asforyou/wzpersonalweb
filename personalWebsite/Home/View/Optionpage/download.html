@@ -1,0 +1,63 @@
+<include file="Public/head" />
+<body>
+    <section class="container">
+    <include file="Public/left" />
+        <div class="center">
+           <div class="content">
+                <!-- 最新发布 -->
+                <div class="newPost">
+                    <h3><span>常用资料工具下载</span></h3>
+                        <!-- <span class="tipNum">下载次数</span> -->
+                        <foreach name="download" item="download"> 
+                            <dl class="downloadItem">
+                                <dd>
+                                    <span class="downloadEle"><a data-id="{$download.d_id}" download href="{$download.d_href}">{$download.d_name}</a></span>
+                                    <span class="downloadNum"><i class="fa fa-download" aria-hidden="true"></i><em class="dNum">({$download.d_num})</em></span>
+                                </dd>
+                            </dl>
+                        </foreach>
+                        <div class="pageNum">
+                            <a class="btn prev" style="display: {$pageData[3]}" href="{$_SERVER['PHP_SELF']}?gpage={$pageData[1]}">上一页</a>
+                            <a class="btn next" style="display: {$pageData[4]}" href="{$_SERVER['PHP_SELF']}?gpage={$pageData[2]}">下一页</a>
+                        </div>
+                </div>
+           </div>
+           <!-- 网站底部 -->
+           <include file="Public/footer" />
+        </div>
+        <div class="right">
+            <div class="searchRight">
+                <h3><span>搜索</span></h3>
+                <form method="post" action="" class="searchItem">
+                    <input type="text" name="keyWords" class="keyWord" id="keyWords" placeholder="输入关键字">
+                    <input type="submit" value="搜索" class="btn">
+                </form>
+            </div>
+            <div class="hotLabel">
+                <h3><span>热门标签</span></h3>
+                <ul class="recentArticle">
+                    <li><a href="">js (40)</a></li>
+                    <li><a href="">css (40)</a></li>
+                    <li><a href="">css3 (40)</a></li>
+                    <li><a href="">小程序 (40)</a></li>
+                    <li><a href="">html5 (40)</a></li>
+                    <li><a href="">jq (40)</a></li>
+                    <li><a href="">vue (43)</a></li>
+                    <li><a href="">优化 (52)</a></li>
+                    <li><a href="">过滤器 (46)</a></li>
+                    <li><a href="">CSS (52)</a></li>
+                    <li><a href="">前端技巧 (61)</a></li>
+                    <li><a href="">SEO (40)</a></li>
+                    <li><a href="">用户体验 (46)</a></li>
+                    <li><a href="">设计思路 (43)</a></li>
+                    <li><a href="">HTML5 (40)</a></li>
+                    <li><a href="">SEO (40)</a></li>
+                    <li><a href="">网页设计 (40)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <include file="Public/scrollTop" />
+</body>
+</html>
+<include file="Public/js" />

@@ -1,0 +1,1892 @@
+[ 2017-05-04T17:40:43+08:00 ] ::1 /personalWebsite/index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0105s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286043 and UNIX_TIMESTAMP(art_time) < 1493890843 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0026s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2017-05-04T17:40:43+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0338s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:08+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0028s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286068 and UNIX_TIMESTAMP(art_time) < 1493890868 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0001s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0026s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2017-05-04T17:41:08+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0005s ]
+
+[ 2017-05-04T17:41:09+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0035s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016620s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016966s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-05-04T17:41:09+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:09+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:10+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0032s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286070 and UNIX_TIMESTAMP(art_time) < 1493890870 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0027s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-05-04T17:41:10+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:11+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/mobile.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='移动端开发' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0025s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='移动端开发' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016102s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016415s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-05-04T17:41:11+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:11+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0001s ]
+
+[ 2017-05-04T17:41:12+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/linux.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0393s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='linux' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0022s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='linux' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016378s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016641s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-05-04T17:41:12+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0001s ]
+
+[ 2017-05-04T17:41:12+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:13+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/php.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0037s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='php' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0028s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1
+ [ SQL语句 ] : SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='php' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT -5,5  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+
+[ 2017-05-04T17:41:15+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:17+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/linux.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0027s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='linux' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='linux' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016521s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016807s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-05-04T17:41:19+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:19+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:23+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/mobile.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0036s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='移动端开发' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0025s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='移动端开发' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012437s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016251s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016514s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-05-04T17:41:24+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:24+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:28+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0032s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0027s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014073s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014355s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2017-05-04T17:41:28+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0004s ]
+
+[ 2017-05-04T17:41:29+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:30+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/python.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0036s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='python' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0026s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1
+ [ SQL语句 ] : SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='python' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT -5,5  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+
+[ 2017-05-04T17:41:30+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0010s ]
+
+[ 2017-05-04T17:41:31+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0029s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0023s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014077s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014381s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-05-04T17:41:31+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0003s ]
+
+[ 2017-05-04T17:41:31+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:34+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0437s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286094 and UNIX_TIMESTAMP(art_time) < 1493890894 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0507s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0231s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-05-04T17:41:34+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:41:46+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0035s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286105 and UNIX_TIMESTAMP(art_time) < 1493890905 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 5,5   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2017-05-04T17:41:46+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0001s ]
+
+[ 2017-05-04T17:41:47+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0028s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286107 and UNIX_TIMESTAMP(art_time) < 1493890907 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0040s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-05-04T17:41:47+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:44:42+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286282 and UNIX_TIMESTAMP(art_time) < 1493891082 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0028s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2017-05-04T17:44:42+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:44:44+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0026s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286284 and UNIX_TIMESTAMP(art_time) < 1493891084 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0023s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-05-04T17:44:44+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:46:51+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286411 and UNIX_TIMESTAMP(art_time) < 1493891211 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-05-04T17:46:51+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0001s ]
+
+[ 2017-05-04T17:46:52+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0029s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286412 and UNIX_TIMESTAMP(art_time) < 1493891212 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0029s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2017-05-04T17:46:52+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:47:17+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0043s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286437 and UNIX_TIMESTAMP(art_time) < 1493891237 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0025s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-05-04T17:47:17+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0003s ]
+
+[ 2017-05-04T17:49:14+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0039s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286554 and UNIX_TIMESTAMP(art_time) < 1493891354 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0065s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001619s ]
+
+[ 2017-05-04T17:49:14+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:49:56+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0031s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286596 and UNIX_TIMESTAMP(art_time) < 1493891396 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0001s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0046s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-05-04T17:49:56+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0003s ]
+
+[ 2017-05-04T17:50:01+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0034s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286601 and UNIX_TIMESTAMP(art_time) < 1493891401 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0023s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2017-05-04T17:50:01+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:50:26+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286626 and UNIX_TIMESTAMP(art_time) < 1493891426 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0040s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2017-05-04T17:50:27+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0008s ]
+
+[ 2017-05-04T17:50:53+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0029s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286653 and UNIX_TIMESTAMP(art_time) < 1493891453 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0001s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0025s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-05-04T17:50:53+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0001s ]
+
+[ 2017-05-04T17:50:54+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0028s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286654 and UNIX_TIMESTAMP(art_time) < 1493891454 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0023s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2017-05-04T17:50:54+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0005s ]
+
+[ 2017-05-04T17:50:55+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0032s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286655 and UNIX_TIMESTAMP(art_time) < 1493891455 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0031s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2017-05-04T17:50:55+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0003s ]
+
+[ 2017-05-04T17:50:55+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286655 and UNIX_TIMESTAMP(art_time) < 1493891455 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0001s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-05-04T17:50:55+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:04+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0051s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286664 and UNIX_TIMESTAMP(art_time) < 1493891464 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0025s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 5,5   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2017-05-04T17:51:05+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:07+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html?gpage=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0056s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286667 and UNIX_TIMESTAMP(art_time) < 1493891467 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0025s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-05-04T17:51:07+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:13+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0036s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0023s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012693s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016086s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016385s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-05-04T17:51:13+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:13+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:14+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0027s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286673 and UNIX_TIMESTAMP(art_time) < 1493891473 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0026s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2017-05-04T17:51:14+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0001s ]
+
+[ 2017-05-04T17:51:18+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/download.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.1192s ]
+SQL: SELECT * FROM `download`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `download` LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2017-05-04T17:51:19+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0007s ]
+
+[ 2017-05-04T17:51:25+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/download.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `download`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `download` LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-05-04T17:51:25+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0004s ]
+
+[ 2017-05-04T17:51:27+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0028s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286687 and UNIX_TIMESTAMP(art_time) < 1493891487 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-05-04T17:51:28+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:33+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286693 and UNIX_TIMESTAMP(art_time) < 1493891493 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0041s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2017-05-04T17:51:33+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:33+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0032s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286693 and UNIX_TIMESTAMP(art_time) < 1493891493 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0026s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2017-05-04T17:51:34+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0008s ]
+
+[ 2017-05-04T17:51:34+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0038s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286694 and UNIX_TIMESTAMP(art_time) < 1493891494 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0001s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0023s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-05-04T17:51:35+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0001s ]
+
+[ 2017-05-04T17:51:35+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0026s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286695 and UNIX_TIMESTAMP(art_time) < 1493891495 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0027s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-05-04T17:51:35+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0006s ]
+
+[ 2017-05-04T17:51:35+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0027s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286695 and UNIX_TIMESTAMP(art_time) < 1493891495 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0001s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-05-04T17:51:35+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0038s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286695 and UNIX_TIMESTAMP(art_time) < 1493891495 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0062s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-05-04T17:51:36+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:52+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0118s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286712 and UNIX_TIMESTAMP(art_time) < 1493891512 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0208s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-05-04T17:51:52+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0001s ]
+
+[ 2017-05-04T17:51:53+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0029s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286713 and UNIX_TIMESTAMP(art_time) < 1493891513 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-05-04T17:51:54+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:51:55+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0118s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286715 and UNIX_TIMESTAMP(art_time) < 1493891515 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0348s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0290s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2017-05-04T17:51:56+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0003s ]
+
+[ 2017-05-04T17:52:18+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0031s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0036s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017761s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.018075s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2017-05-04T17:52:18+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:52:18+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:52:19+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0028s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286739 and UNIX_TIMESTAMP(art_time) < 1493891539 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0001s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0024s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2017-05-04T17:52:19+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-05-04T17:52:21+08:00 ] ::1 /personalWebsite/index.php/Home/Optionpage/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0031s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0023s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015643s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020425s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.020895s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php:95) D:\xampp\htdocs\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-05-04T17:52:21+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0003s ]
+
+[ 2017-05-04T17:52:21+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0005s ]
+
+[ 2017-05-04T17:52:23+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0032s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1493286743 and UNIX_TIMESTAMP(art_time) < 1493891543 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `download` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `download` ORDER BY d_num desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0028s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`art_href`,count(com_id) as idnum FROM `art` left join commentreply on commentreply.art_id = art.art_id  GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-05-04T17:52:23+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+

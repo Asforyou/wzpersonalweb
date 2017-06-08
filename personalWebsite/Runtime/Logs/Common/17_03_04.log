@@ -1,0 +1,12 @@
+[ 2017-03-04T15:29:51+08:00 ] ::1 /personalWebsite/index.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+ERR: 无法加载模块:Index
+
+[ 2017-03-04T15:30:28+08:00 ] ::1 /personalWebsite/index.php/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:Index
+

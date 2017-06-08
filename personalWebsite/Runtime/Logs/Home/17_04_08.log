@@ -1,0 +1,275 @@
+[ 2017-04-08T01:23:53+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0020s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1490981033 and UNIX_TIMESTAMP(art_time) < 1491585833 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0000s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-08T01:24:04+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Index/index.html?gpage=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0040s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1490981044 and UNIX_TIMESTAMP(art_time) < 1491585844 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0040s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 5,5   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:24:15+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Frotend/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0040s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0040s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T01:24:24+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Frotend/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0030s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T01:24:27+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Mobile/mobile.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0010s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='移动端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0000s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='移动端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.015600s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP\Library\Think\View.class.php:95) C:\wamp\www\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP\Library\Think\View.class.php:95) C:\wamp\www\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP\Library\Think\View.class.php:95) C:\wamp\www\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T01:24:29+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Personnote/personalNote.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:25:04+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Mobile/mobile.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0000s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='移动端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0000s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='移动端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011000s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP\Library\Think\View.class.php:95) C:\wamp\www\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP\Library\Think\View.class.php:95) C:\wamp\www\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP\Library\Think\View.class.php:95) C:\wamp\www\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:25:05+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0040s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1490981105 and UNIX_TIMESTAMP(art_time) < 1491585905 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0050s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:25:35+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/article/article/page/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:26:42+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/Frotend/frotend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc  [ RunTime:0.0030s ]
+SQL: SELECT art.art_id,`art_title`,`art_content`,`art_author`,`art_read`,`art_zan`,`art_cataogaries`,`art_tags`,`art_time`,`photo_id`,`photohref`,count(art.art_id) as idnum FROM `art` left join photo on photo.art_id = art.art_id left join commentreply on commentreply.art_id = art.art_id  WHERE ( art_cataogaries='前端开发' and photo_id = 1 ) GROUP BY art.art_id ORDER BY art_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:26:45+08:00 ] 192.168.1.100 /personalWebsite/index.php/Home/article/article/page/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

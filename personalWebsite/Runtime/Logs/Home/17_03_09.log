@@ -1,0 +1,673 @@
+[ 2017-03-09T14:48:27+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010560s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0204s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1488437307 and UNIX_TIMESTAMP(art_time) < 1489042106 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0266s ]
+SQL: SELECT * FROM `art` left join photo on photo.art_id = art.art_id left join comment on comment.art_id = art.art_id  WHERE ( photo_id = 1 ) ORDER BY art_time desc  [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004283s ]
+
+[ 2017-03-09T14:48:27+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
+[ 2017-03-09T14:48:31+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2017-03-09T14:48:32+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T14:49:04+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-03-09T14:49:04+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T14:50:22+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2017-03-09T14:50:22+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T14:50:23+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2017-03-09T14:50:24+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0003s ]
+
+[ 2017-03-09T14:50:49+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2017-03-09T14:50:49+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T14:51:23+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-03-09T14:51:23+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T14:51:51+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-03-09T14:51:51+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:04:24+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2017-03-09T15:04:24+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:05:12+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-03-09T15:05:12+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:06:21+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-03-09T15:06:21+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:07:29+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2017-03-09T15:07:29+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:07:42+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-03-09T15:07:42+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:07:53+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-03-09T15:07:53+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:08:02+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2017-03-09T15:08:02+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:08:10+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2017-03-09T15:08:10+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0003s ]
+
+[ 2017-03-09T15:08:13+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2017-03-09T15:08:13+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0003s ]
+
+[ 2017-03-09T15:08:23+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2017-03-09T15:08:23+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=2 )  [ RunTime:0.0003s ]
+
+[ 2017-03-09T15:10:58+08:00 ] ::1 /personalWebsite/index.php/Home/Index/zan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0029s ]
+SQL: UPDATE `art` SET `art_zan`='20' WHERE ( art_id = 6 ) [ RunTime:0.0412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2017-03-09T15:11:02+08:00 ] ::1 /personalWebsite/index.php/Home/article/article/page/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `art` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: comment D:\xampp\htdocs\personalWebsite\Runtime\Cache\Home\590e9d3d1e6fd62ed8fa5111854ac312.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2017-03-09T15:11:02+08:00 ] ::1 /personalWebsite/index.php/Home/Article/comment?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `comment` WHERE ( art_id=1 )  [ RunTime:0.0002s ]
+
+[ 2017-03-09T15:12:46+08:00 ] ::1 /personalWebsite/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0036s ]
+SQL: SELECT `art_id`,`art_read`,`art_zan`,`art_title` FROM `art` WHERE ( UNIX_TIMESTAMP(art_time) > 1488438766 and UNIX_TIMESTAMP(art_time) < 1489043566 ) ORDER BY art_read desc LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `art` left join photo on photo.art_id = art.art_id left join comment on comment.art_id = art.art_id  WHERE ( photo_id = 1 ) ORDER BY art_time desc  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-03-09T15:12:46+08:00 ] ::1 /personalWebsite/index.php/Home/Index/broadcast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `cast_one` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `cast_one`  [ RunTime:0.0002s ]
+
